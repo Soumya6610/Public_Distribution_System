@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="pds" extends="struts-default">
+		<action name="loginAction" class="pds.login" method="loginData">
+			<result name="admin">/admin.jsp</result>
+			<result name="incharge">/inchargehome.jsp</result>
+			<result name="loginfail">/login.jsp</result>
+		</action>
+		<action name="inchargeaction" method="inchargeaction"
+			class="pds.login">
+			<result name="displaydata">/success.jsp</result>
+		</action>
+
+		<action name="closingbalances" method="closingBalances"
+			class="pds.login">
+			<result name="close">/success.jsp</result>
+		</action>
+		<action name="login.jsp" method="logOut" class="pds.login">
+			<result name="logout">/login.jsp</result>
+		</action>
+
+
+
+		<action name="show" method="show" class="pds.login">
+		</action>
+
+		<action name="registeraction" method="registeraction"
+			class="pds.login">
+			<result name="displaydata">/success.jsp</result>
+		</action>
+
+		<action name="add" class="pds.login" method="adddepot">
+			<result name="displaydata">/adddepot.jsp</result>
+		</action>
+		<action name="view" class="pds.login" method="viewdepot">
+			<result name="displaydata">/view.jsp</result>
+		</action>
+		<action name="view11" class="pds.login" method="view11">
+			<result name="view11">/edit.jsp</result>
+		</action>
+
+		<action name="updateaction1" class="pds.login"
+			method="updateaction1">
+			<result name="update">/success2.jsp</result>
+		</action>
+
+		<action name="show1" method="show1" class="pds.login">
+		</action>
+
+		<action name="addRRC" class="pds.login" method="addRRC">
+			<result name="displaydata">/rrc.jsp</result>
+		</action>
+
+		<action name="show2" method="show2" class="pds.login">
+		</action>
+		<action name="show3" method="show3" class="pds.login">
+		</action>
+
+
+		<action name="RRCregisteraction" class="pds.login"
+			method="RRCregisteraction">
+			<result name="displaydata">/open.jsp</result>
+		</action>
+
+		<action name="RRCupdate" class="pds.login" method="RRCupdate">
+			<result name="update">/success2.jsp</result>
+		</action>
+
+
+		<action name="deletdist" class="pds.login" method="deletdist">
+			<result name="displaydata">/delete.jsp</result>
+		</action>
+
+		<action name="seletdist" class="pds.login" method="deletdist">
+			<result name="displaydata">/closingdata.jsp</result>
+		</action>
+		<action name="seletdist1" class="pds.login" method="deletdist1">
+			<result name="displaydata">/closingdata.jsp</result>
+		</action>
+		<action name="closingaction" class="pds.login"
+			method="closingAction">
+			<result name="angul">/closingdataanugul.jsp</result>
+			<result name="jharsuguda">/closingdataJharsuguda.jsp</result>
+			<result name="Balasore">/closingdatabalasorel.jsp</result>
+			<result name="Sambalpur">/closingdatasambalpur.jsp</result>
+			<result name="displaydata">/closingdata.jsp</result>
+		</action>
+		<!--<action name="closingaction" class="pds.login" method="closingAction"> 
+			<result name="displaydata">/delete.jsp</result> </action> -->
+
+
+		<action name="show4" method="show2" class="pds.login">
+		</action>
+		<action name="show5" method="show3" class="pds.login">
+		</action>
+
+		<action name="rice" method="riceTransfer" class="pds.login">
+			<result name="riceangul">/riceangul.jsp</result>
+			<result name="ricejharsuguda">/ricejharsuguda.jsp</result>
+			<result name="ricebalasore">/ricebalasore.jsp</result>
+			<result name="ricesambalpur">/ricesambalpur.jsp</result>
+		</action>
+
+		<action name="sugar" method="sugarTransfer" class="pds.login">
+			<result name="sugarangul">/sugarangul.jsp</result>
+			<result name="sugarjharsuguda">/sugarjharsuguda.jsp</result>
+			<result name="sugarbalasore">/sugarbalasore.jsp</result>
+			<result name="sugarsambalpur">/sugarsambalpur.jsp</result>
+		</action>
+		<action name="wheat" method="wheatTransfer" class="pds.login">
+			<result name="wheatangul">/wheatangul.jsp</result>
+			<result name="wheatjharsuguda">/wheatjharsuguda.jsp</result>
+			<result name="wheatbalasore">/wheatbalasore.jsp</result>
+			<result name="wheatsambalpur">/wheatsambalpur.jsp</result>
+		</action>
+
+
+		<action name="deletaction" class="pds.login"
+			method="deletaction">
+			<result name="displaydata">/next.jsp</result>
+		</action>
+
+
+
+
+
+
+		<action name="show6" method="show6" class="pds.login">
+		</action>
+		<action name="shown" method="shownDetails" class="pds.login">
+		</action>
+
+
+		<action name="shownhirestatus" method="shownHireStatus"
+			class="pds.login">
+		</action>
+		<action name="repot" method="repot" class="pds.login">
+			<result name="displaydata">/depot reg.jsp</result>
+		</action>
+
+		<action name="statushire" method="statushire" class="pds.login">
+			<result name="displaydata">/statusReportDepotHire.jsp</result>
+		</action>
+		<action name="depotreg" method="depotreg" class="pds.login">
+			<result name="displaydata">/depot reg.jsp</result>
+		</action>
+		<action name="regdetail" class="pds.login" method="regdetail">
+			<result name="displaydata">/regd details.jsp</result>
+		</action>
+
+		<action name="deletemsg" class="pds.login" method="deleteMsg">
+			<result name="deletemsg">/next.jsp</result>
+		</action>
+		<action name="depot_reg" class="pds.login"
+			method="shownDetails">
+			<result name="depot_reg">/depot reg.jsp</result>
+		</action>
+	</package>
+</struts>    
